@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+
+.forms {
+  width: 400px;
+  height: 470px;
+}
+
+.fie {
+  padding: 20px;
+  height: 500;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.label {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.lb-1 {
+  display: block;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 200px;
+}
+
+.button {
+  display: block;
+  margin: 10px 0 0 0;
+  cursor: pointer;
+}
