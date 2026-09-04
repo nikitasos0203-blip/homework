@@ -1,31 +1,6 @@
-html {
-  font-family: Ubuntu, sans-serif;
-  font-weight: 400;
-}
-
-body * {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
 .article {
   padding-top: 80px;
   padding-bottom: 120px;
-}
-
-.container {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .article-title {
