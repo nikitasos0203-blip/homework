@@ -44,7 +44,7 @@ p {
   font-weight: 500;
   font-size: 15px;
   line-height: 130%;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -58,4 +58,27 @@ a {
 
 .button:hover {
   opacity: 0.8;
+}
+
+.section {
+  margin-bottom: 140px;
+}
+
+.title-large {
+  max-width: 596px;
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.text-sub {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #858e8a;
 }
