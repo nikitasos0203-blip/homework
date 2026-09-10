@@ -30,3 +30,32 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+
+.button {
+  display: inline-block;
+  padding: 19px 32px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #3596ed;
+  transition: opacity 0.2s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+}

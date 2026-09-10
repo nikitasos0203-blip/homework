@@ -1,0 +1,32 @@
+.hero {
+  padding-top: 80px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero-images {
+  display: flex;
+}
+
+.hero h1 {
+  margin-bottom: 40px;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.hero h1 strong {
+  font-weight: 600;
+  color: #3596ed;
+}
+
+.hero .text {
+  margin-bottom: 140px;
+}
