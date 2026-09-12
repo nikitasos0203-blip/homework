@@ -80,4 +80,13 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.article-play-button:hover {
+  background-color: #41a6ff;
+}
+
+.article-play-button:disabled {
+  background-color: #2466a0;
 }
