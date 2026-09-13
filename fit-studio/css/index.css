@@ -44,6 +44,10 @@
   display: flex;
 }
 
+.hero-images img {
+  display: inline-block;
+}
+
 .hero-choose {
   position: absolute;
   top: 40px;
@@ -112,6 +116,10 @@
   transform: translateX(7px);
 }
 
+.news {
+  display: none;
+}
+
 .faq {
   position: relative;
 }
@@ -124,6 +132,10 @@
   height: 48px;
   top: 215px;
   background: url(../img/decor-sp.svg) repeat-x;
+}
+
+.faq {
+  display: none;
 }
 
 .phone-link {
@@ -177,4 +189,10 @@ summary::-webkit-details-marker {
 
 details > p {
   padding: 0 20px 20px;
+}
+
+@media (width <= 1440px) {
+  .hero-images img {
+    width: 50;
+  }
 }
