@@ -193,6 +193,7 @@ details > p {
 
 @media (width <= 1440px) {
   .hero-images img {
-    width: 50;
+    max-width: 100%;
+    height: auto;
   }
 }
