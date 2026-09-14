@@ -69,7 +69,7 @@ button.button:disabled {
 }
 
 .section {
-  display: none;
+  /* display: none; */
   margin-bottom: 140px;
 }
 
