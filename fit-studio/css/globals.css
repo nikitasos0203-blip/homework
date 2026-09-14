@@ -69,6 +69,7 @@ button.button:disabled {
 }
 
 .section {
+  display: none;
   margin-bottom: 140px;
 }
 

@@ -15,7 +15,6 @@
 
 .hero-container {
   display: flex;
-  align-items: center;
   gap: 28px;
 }
 
@@ -116,10 +115,6 @@
   transform: translateX(7px);
 }
 
-.news {
-  display: none;
-}
-
 .faq {
   position: relative;
 }
@@ -132,10 +127,6 @@
   height: 48px;
   top: 215px;
   background: url(../img/decor-sp.svg) repeat-x;
-}
-
-.faq {
-  display: none;
 }
 
 .phone-link {
@@ -191,9 +182,16 @@ details > p {
   padding: 0 20px 20px;
 }
 
-@media (width <= 1440px) {
+@media (width: 1440px) {
   .hero-images img {
-    max-width: 100%;
-    height: auto;
+    max-width: 353px;
+    width: 100%;
+  }
+}
+
+@media (width <= 1440px) {
+  .hero-info {
+    max-width: 492px;
+    width: 100%;
   }
 }
