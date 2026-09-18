@@ -14,6 +14,8 @@
 }
 
 .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 28px;
 }
@@ -33,6 +35,10 @@
   color: #3596ed;
 }
 
+.hero-info {
+  max-width: 492px;
+}
+
 .hero-info .text {
   max-width: 440px;
   margin-bottom: 140px;
@@ -40,7 +46,11 @@
 
 .hero-images {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
@@ -52,6 +62,8 @@
   position: absolute;
   top: 40px;
   left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
   transform: translate(-50%);
   padding: 22px;
   max-width: 161px;
@@ -60,19 +72,29 @@
   text-align: center;
 }
 
-.news {
+/* .news {
   display: none;
-}
+} */
 
 .news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 28px;
 }
 
 .news-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 284px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 25%;
+  flex: 1 1 25%;
   background-color: #fff;
   border: 1px solid #d3cbd9;
   overflow: hidden;
@@ -98,7 +120,11 @@
 }
 
 .news-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 8px;
   font-weight: 400;
@@ -113,26 +139,26 @@
   width: 22px;
   height: 9px;
   background-image: url(../img/arrow-right.svg);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
+  transition:
+    transform 0.2s,
+    -webkit-transform 0.2s;
 }
 
 .news-link:hover::after {
+  -webkit-transform: translateX(7px);
+  -ms-transform: translateX(7px);
   transform: translateX(7px);
 }
 
 .faq {
-  display: none;
   position: relative;
 }
 
 .faq::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 40%;
-  height: 48px;
   top: 215px;
-  background: url(../img/decor-sp.svg) repeat-x;
 }
 
 .phone-link {
@@ -140,6 +166,7 @@
   font-size: 18px;
   color: #2c332f;
   text-decoration: none;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -148,6 +175,8 @@
 }
 
 .faq-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 28px;
 }
@@ -157,24 +186,38 @@ details {
   border-block: 1px solid #d3cbd9;
 }
 
+details:last-child {
+  margin-bottom: 0;
+}
+
 details[open] summary::after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 10px;
   list-style: none;
   padding: 20px;
   cursor: pointer;
-  user-select: none;
+  /* user-select: none; */
 }
 
 summary::after {
   content: "";
   display: inline-block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 17px;
   height: 22px;
   background: url(../img/arrow-down.svg) no-repeat center / cover;
@@ -200,7 +243,12 @@ details > p {
   }
 
   .hero-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -216,11 +264,50 @@ details > p {
     max-width: inherit;
     margin-bottom: 40px;
   }
+
+  .news-container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .news-article {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 350px;
+  }
+
+  .news-article img {
+    width: 100%;
+  }
+
+  .faq::before {
+    display: none;
+  }
+
+  .faq-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 
 @media (width <= 777px) {
   .hero h1 {
     font-size: 50px;
+  }
+
+  .news-article {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 400px;
   }
 }
 
