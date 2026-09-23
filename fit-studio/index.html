@@ -20,8 +20,8 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-inner">
-          <a href="index.html">
+        <div class="header__inner">
+          <a class="header__logo logo" href="index.html">
             <img
               src="./img/logo-icon.svg"
               width="84"
@@ -29,17 +29,22 @@
               alt="Логотип Fit Studio"
             />
           </a>
-          <div class="phone text-sub">
-            <p class="phone-text">Первое посещение бесплатно</p>
-            <a class="phone-link" href="tel:+79282822882">+7 (928) 282-28-82</a>
+          <div class="header__phone text-sub">
+            <p class="header__phone-text">Первое посещение бесплатно</p>
+            <a class="header__phone-link" href="tel:+79282822882"
+              >+7 (928) 282-28-82</a
+            >
           </div>
         </div>
       </div>
     </header>
     <section class="hero section">
-      <div class="container hero-container">
-        <div class="hero-info">
-          <h1>Подтянутое тело <strong> за месяц </strong> тренировок</h1>
+      <div class="container hero__container">
+        <div class="hero__info">
+          <h1 class="hero__title">
+            Подтянутое тело
+            <strong class="hero__title-accent"> за месяц </strong> тренировок
+          </h1>
           <p class="text">
             Программа тренировки включает в себя разнообразные упражнения,
             направленные на развитие силы и мышечного тонуса.
@@ -65,37 +70,41 @@
     </section>
     <section class="news section">
       <div class="container">
-        <h2 class="title-large">Последние новости</h2>
-        <div class="news-container">
-          <article class="news-article">
-            <header>
+        <h2 class="news__title title-large">Последние новости</h2>
+        <div class="news__container">
+          <article class="news__article">
+            <header class="news__article-header">
               <img
+                class="news__article-img"
                 src="./img/news/news-1.jpg"
                 alt="Велотренажеры в спортивном зале"
                 width="284"
                 height="203"
               />
-              <div class="news-info">
-                <time class="news-date text-sub" datetime="2024-04-19">
+              <div class="news__article-info">
+                <time class="news__article-date text-sub" datetime="2024-04-19">
                   19.04.2024
                 </time>
-                <h3 class="text">Открытие нового филиала в центре города!</h3>
+                <h3 class="news__article-title text">
+                  Открытие нового филиала в центре города!
+                </h3>
               </div>
             </header>
-            <footer>
-              <a class="news-link" href="article.html">Подробнее</a>
+            <footer class="news__article-footer">
+              <a class="news__article-link" href="article.html">Подробнее</a>
             </footer>
           </article>
-          <article class="news-article">
+          <article class="news__article">
             <header>
               <img
+                class="news__article-img"
                 src="./img/news/news-2.jpg"
                 alt="Группа девушек занимается спортом"
                 width="284"
                 height="203"
               />
-              <div class="news-info">
-                <time class="news-date text-sub" datetime="2024-04-17">
+              <div class="news__article-info">
+                <time class="news__article-date text-sub" datetime="2024-04-17">
                   17.04.2024
                 </time>
                 <h3 class="text">
@@ -104,19 +113,20 @@
               </div>
             </header>
             <footer>
-              <a class="news-link" href="article.html">Подробнее</a>
+              <a class="news__article-link" href="article.html">Подробнее</a>
             </footer>
           </article>
-          <article class="news-article">
+          <article class="news__article">
             <header>
               <img
+                class="news__article-img"
                 src="./img/news/news-3.jpg"
                 alt="Две девушки занимаются на велотренажере"
                 width="284"
                 height="203"
               />
-              <div class="news-info">
-                <time class="news-date text-sub" datetime="2024-04-13">
+              <div class="news__article-info">
+                <time class="news__article-date text-sub" datetime="2024-04-13">
                   13.04.2024
                 </time>
                 <h3 class="text">
@@ -125,26 +135,27 @@
               </div>
             </header>
             <footer>
-              <a class="news-link" href="article.html">Подробнее</a>
+              <a class="news__article-link" href="article.html">Подробнее</a>
             </footer>
           </article>
-          <article class="news-article">
+          <article class="news__article">
             <header>
               <img
+                class="news__article-img"
                 src="./img/news/news-4.jpg"
                 alt="Девушка бежит на беговой дорожке"
                 width="284"
                 height="203"
               />
-              <div class="news-info">
-                <time class="news-date text-sub" datetime="2024-04-08">
+              <div class="news__article-info">
+                <time class="news__article-date text-sub" datetime="2024-04-08">
                   08.04.2024
                 </time>
                 <h3 class="text">Открыт конкурс на лучший фитнес-челлендж</h3>
               </div>
             </header>
             <footer>
-              <a class="news-link" href="article.html">Подробнее</a>
+              <a class="news__article-link" href="article.html">Подробнее</a>
             </footer>
           </article>
         </div>
@@ -152,64 +163,65 @@
     </section>
     <section class="faq section decor">
       <div class="container">
-        <h2 class="title-large">Вопросы и ответы</h2>
-        <div class="faq-container">
+        <h2 class="faq__title title-large">Вопросы и ответы</h2>
+        <div class="faq__container">
           <img
+            class="faq__img"
             src="./img/sporty-woman.jpg"
             width="492"
             height="531"
             alt="Спортивная девушка с гантелями"
           />
-          <div>
-            <details name="faq" open>
-              <summary class="title-medium">
+          <div class="faq__accordion">
+            <details class="faq__accordion-details" name="faq" open>
+              <summary class="faq__accordion-summary title-medium">
                 Какие способы оплаты вы принимаете?
               </summary>
-              <p class="text">
+              <p class="faq__accordion-content text">
                 Наш сайт подключен к интернет-эквайрингу, и вы можете оплатить
                 товар или услугу банковской картой Visa, MasterCard, Maestro и
                 МИР. Также в наших клубах возможна наличная оплата при посещении
                 фитнес-центра.
               </p>
             </details>
-            <details name="faq">
-              <summary class="title-medium">
+            <details class="faq__accordion-details" name="faq">
+              <summary class="faq__accordion-summary title-medium">
                 Какие абонементы у вас есть?
               </summary>
-              <p class="text">
+              <p class="faq__accordion-content text">
                 Наш сайт подключен к интернет-эквайрингу, и вы можете оплатить
                 товар или услугу банковской картой Visa, MasterCard, Maestro и
                 МИР. Также в наших клубах возможна наличная оплата при посещении
                 фитнес-центра.
               </p>
             </details>
-            <details name="faq">
-              <summary class="title-medium">
+            <details class="faq__accordion-details" name="faq">
+              <summary class="faq__accordion-summary title-medium">
                 Есть ли у вас рассрочка на абонементы?
               </summary>
-              <p class="text">
+              <p class="faq__accordion-content text">
                 Наш сайт подключен к интернет-эквайрингу, и вы можете оплатить
                 товар или услугу банковской картой Visa, MasterCard, Maestro и
                 МИР. Также в наших клубах возможна наличная оплата при посещении
                 фитнес-центра.
               </p>
             </details>
-            <details name="faq">
-              <summary class="title-medium">
+            <details class="faq__accordion-details" name="faq">
+              <summary class="faq__accordion-summary title-medium">
                 Есть ли у вас бонусы для постоянных клиентов?
               </summary>
-              <p class="text">
+              <p class="faq__accordion-content text">
                 Наш сайт подключен к интернет-эквайрингу, и вы можете оплатить
                 товар или услугу банковской картой Visa, MasterCard, Maestro и
                 МИР. Также в наших клубах возможна наличная оплата при посещении
                 фитнес-центра.
               </p>
             </details>
-            <details name="faq">
-              <summary class="title-medium">
+            <details class="faq__accordion-details" name="faq">
+              <summary class="faq__accordion-summary title-medium">
                 Возможно ли переоформить мою клубную карту на другого человека?
               </summary>
-              <p class="text">
+              <p class="faq__accordion-content text">
                 Наш сайт подключен к интернет-эквайрингу, и вы можете оплатить
                 товар или услугу банковской картой Visa, MasterCard, Maestro и
                 МИР. Также в наших клубах возможна наличная оплата при посещении
@@ -221,9 +233,9 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="footer-top">
+      <div class="footer__top">
         <div class="container">
-          <a class="footer-logo" href="/">
+          <a class="footer__logo logo" href="/">
             <img
               src="./img/logo-icon.svg"
               width="84"
@@ -231,19 +243,29 @@
               alt="Логотип Fit Studio"
             />
           </a>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Клубы</a></li>
-              <li><a href="#">Тренировки</a></li>
-              <li><a href="#">Абонементы</a></li>
-              <li><a href="#">Программа лояльности</a></li>
-              <li><a href="#">Контакты</a></li>
+          <nav class="footer__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Клубы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Тренировки</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Абонементы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Программа лояльности</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
             </ul>
           </nav>
         </div>
       </div>
       <div class="container">
-        <p class="copyright">&copy; Copyright. Все права защищены</p>
+        <p class="footer__copyright">&copy; Copyright. Все права защищены</p>
       </div>
     </footer>
   </body>

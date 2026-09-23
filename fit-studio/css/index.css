@@ -13,14 +13,14 @@
   background: url(../img/decor-sp.svg) repeat-x;
 }
 
-.hero-container {
+.hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 28px;
 }
 
-.hero h1 {
+.hero__title {
   margin-bottom: 40px;
   font-family: Oswald, sans-serif;
   font-weight: 600;
@@ -30,12 +30,12 @@
   color: #2c332f;
 }
 
-.hero h1 strong {
+.hero__title .hero__title-accent {
   font-weight: 600;
   color: #3596ed;
 }
 
-.hero-info {
+.hero__info {
   max-width: 492px;
 }
 
