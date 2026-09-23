@@ -29,16 +29,18 @@
               alt="Fit Studio логотип"
             />
           </a>
-          <div class="phone text-sub">
-            <p class="phone-text">Первое посещение бесплатно</p>
-            <a class="phone-link" href="tel:+79282822882">+7 (928) 282-28-82</a>
+          <div class="header__phone text-sub">
+            <p class="header__phone-text">Первое посещение бесплатно</p>
+            <a class="header__phone-link" href="tel:+79282822882"
+              >+7 (928) 282-28-82</a
+            >
           </div>
         </div>
       </div>
     </header>
     <article class="article">
-      <section class="article-mb-1">
-        <div class="container article-mb-1">
+      <section class="article__section article__section--spaced">
+        <div class="container article__content article__content--spaced">
           <h1 class="article__title title-large">
             Открытие нового филиала в центре города!
           </h1>
@@ -69,9 +71,9 @@
           </div>
         </div>
       </section>
-      <section class="article-mb-1">
+      <section class="article__section article__section--spaced">
         <div class="container">
-          <h2 class="article__medium-title title-large article-title-medium">
+          <h2 class="article__title article__title--medium title-large">
             Групповые занятия
           </h2>
           <p class="article__text">
@@ -90,10 +92,12 @@
       </section>
       <section>
         <div class="container">
-          <h2 class="title-large article-title-medium">Обзор нового филиала</h2>
+          <h2 class="article__title article__title--medium title-large">
+            Обзор нового филиала
+          </h2>
         </div>
         <div
-          class="article__decor-wrapper article__decor-wrapper--2 article-mb-2 decor"
+          class="article__decor-wrapper article__decor-wrapper--2 article__decor-wrapper--spaced decor"
         >
           <div class="container">
             <button class="article__play-button">
@@ -123,9 +127,9 @@
       </section>
     </article>
     <footer class="footer">
-      <div class="footer-top">
+      <div class="footer__top">
         <div class="container">
-          <a class="footer-logo" href="./index.html">
+          <a class="footer__logo" href="./index.html">
             <img
               src="./img/logo-icon.svg"
               width="84"
@@ -133,19 +137,29 @@
               alt="Fit Studio логотип"
             />
           </a>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Клубы</a></li>
-              <li><a href="#">Тренировки</a></li>
-              <li><a href="#">Абонементы</a></li>
-              <li><a href="#">Программа лояльности</a></li>
-              <li><a href="#">Контакты</a></li>
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Клубы</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Тренировки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Абонементы</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Программа лояльности</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Контакты</a>
+              </li>
             </ul>
           </nav>
         </div>
       </div>
       <div class="container">
-        <p>&copy; Copyright. Все права защищены</p>
+        <p class="footer__copyright">&copy; Copyright. Все права защищены</p>
       </div>
     </footer>
   </body>
