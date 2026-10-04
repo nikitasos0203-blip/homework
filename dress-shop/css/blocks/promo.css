@@ -1,0 +1,43 @@
+.promo {
+  background-color: var(--black-color);
+  padding-block: 10px;
+}
+
+.promo__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo__text {
+  font-size: 14px;
+  line-height: 130%;
+  margin: 0;
+  color: #fff;
+}
+
+.promo__link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.promo__close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.promo--hidden {
+  display: none;
+}
+
+@media (width <= 680px) {
+  .promo__description {
+    display: none;
+  }
+}

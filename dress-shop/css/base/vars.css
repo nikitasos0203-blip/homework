@@ -1,0 +1,19 @@
+:root {
+  /* Основной шрифт для текста */
+  --font-primary: "Satoshi", sans-serif;
+
+  /* Шрифт для заголовков и акцентов */
+  --font-secondary: "IntegralCF", sans-serif;
+  --font-main: "FONTSPRING-Integral-Heavy", sans-serif;
+
+  /* colors */
+  --black-color: #000;
+  --grey-color: #f0f0f0;
+  --herowm-color: #f2f0f1;
+
+  /* container */
+  --container-width: 1240px;
+  --container-padding: 15px;
+
+  --transition-time: 0.3s;
+}
