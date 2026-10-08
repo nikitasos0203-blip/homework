@@ -11,6 +11,7 @@
 .logo__img {
   display: block;
   width: 124px;
+  min-width: 124px;
 }
 
 .header__menu {
@@ -43,6 +44,30 @@
   color: #00000066;
 }
 
+.header__search-input {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-family: "Satoshi";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #000;
+
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.header__search-input::placeholder {
+  color: #00000066;
+  opacity: 1;
+}
+
 @media (width <= 1055px) {
   .header__search {
     width: 24px;
@@ -52,7 +77,7 @@
     background-color: transparent;
   }
 
-  .header__search-placeholder {
+  .header__search-input {
     display: none;
   }
 
@@ -67,7 +92,7 @@
   }
 }
 
-.header__search-placeholder {
+.header__search-input {
   font-size: 16px;
   color: #00000066;
 }

@@ -9,6 +9,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  min-width: 375px;
+}
+
 body,
 h1,
 h2,
