@@ -1,0 +1,50 @@
+.top-sellers {
+  padding-top: 64px;
+}
+
+@media (width <= 601px) {
+  .top-sellers {
+    padding-top: 42px;
+  }
+}
+
+.top-sellers > .container {
+  border-bottom: none;
+}
+
+.top-sellers__container {
+  padding-bottom: 0px;
+}
+
+@media (width <= 520px) {
+  .top-sellers .product-card__price {
+    flex-wrap: wrap;
+    column-gap: 6px;
+    row-gap: 4px;
+  }
+
+  .top-sellers .product-card__discount {
+    padding: 3px 6px;
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+@media (width <= 410px) {
+  .top-sellers .product-card__price {
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+
+  .top-sellers .product-card__price-current,
+  .top-sellers .product-card__price-old {
+    font-size: 14px;
+  }
+
+  .top-sellers .product-card__discount {
+    flex-shrink: 0;
+    padding: 2px 4px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+}
