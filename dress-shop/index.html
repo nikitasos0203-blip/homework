@@ -62,23 +62,24 @@
             </li>
           </ul>
         </nav>
-        <div class="header__search">
+        <form class="header__search" role="search" method="get">
           <button
             class="header__search-button"
-            type="button"
-            aria-label="Поиск"
+            type="submit"
+            aria-label="Выполнить поиск"
           >
-            <svg width="24" height="24">
+            <svg width="24" height="24" aria-hidden="true">
               <use href="./icons/sprite.svg#search"></use>
             </svg>
           </button>
           <input
             class="header__search-input"
             type="search"
+            name="q"
             placeholder="Искать товары..."
-            aria-label="Поиск"
+            aria-label="Поиск по товарам"
           />
-        </div>
+        </form>
         <div class="header__actions">
           <button
             class="header__actions-button"

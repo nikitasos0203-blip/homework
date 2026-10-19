@@ -15,7 +15,7 @@
 }
 
 .hero__title {
-  font-family: var(--font-main);
+  font-family: var(--font-secondary);
   font-size: 51px;
   max-width: 577px;
   font-weight: 900;
@@ -23,7 +23,7 @@
 }
 
 .hero__text {
-  font-family: "Satoshi";
+  font-family: var(--font-primary);
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 32px;
@@ -59,7 +59,7 @@
 }
 
 .stats__value {
-  font-family: "Satoshi";
+  font-family: var(--font-primary);
   font-size: 40px;
   font-weight: 700;
 }

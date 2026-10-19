@@ -7,7 +7,7 @@
 }
 
 .comment-section__title {
-  font-family: "FONTSPRING DEMO - Integral CF Heavy", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 900;
   /* min-width: 320px  max-width: 1440*/
   font-size: clamp(30px, 1.607rem + 1.34vw, 45px);
@@ -68,6 +68,7 @@
   font-size: 20px;
   line-height: 110%;
   color: #000;
+  margin-bottom: 12px;
 }
 
 .comment-section__card-icon {

@@ -12,7 +12,7 @@
 
 .style-section__title {
   margin: 0 0 64px;
-  font-family: var(--font-main);
+  font-family: var(--font-secondary);
   font-weight: 900;
   /* min-width: 850px  max-width: 1440*/
   font-size: clamp(40px, 1.394rem + 2.083vw, 45px);
@@ -23,7 +23,7 @@
 @media (width <= 850px) {
   .style-section__title {
     margin: 0 0 64px;
-    font-family: var(--font-main);
+    font-family: var(--font-secondary);
     font-weight: 900;
     /* min-width: 850px  max-width: 1090*/
     font-size: clamp(30px, 0.758rem + 3.28vw, 40px);
