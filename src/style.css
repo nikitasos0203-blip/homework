@@ -135,7 +135,7 @@ body.overflow {
     color: #161814;
     font-size: 48px;
     font-weight: 700;
-    margin-top: 50px
+    margin-top: 50px;
     margin-bottom: 40px;
 }
 
@@ -162,7 +162,7 @@ body.overflow {
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
-    margin-top: 20px
+    padding-top: 20px
 }
 
 .content__list-item:hover,.content__list-diplom:hover {
