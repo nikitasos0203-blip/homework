@@ -162,6 +162,7 @@ body.overflow {
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
+    margin-top: 20px
 }
 
 .content__list-item:hover,.content__list-diplom:hover {
