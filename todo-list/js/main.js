@@ -41,8 +41,8 @@ const completeTodoById = (todos, todoId) => {
 };
 
 const deleteTodoById = (todos, todoId) => {
-  const todoIndex = todos.findIndex((todo) => todo[todoReys.id] === todoId);
-  if (todoIndex == -1) {
+  const todoIndex = todos.findIndex((todo) => todo[todoKeys.id] === todoId);
+  if (todoIndex === -1) {
     console.error(errTodoNotFound(todoId));
     return todos;
   }
