@@ -52,13 +52,18 @@ const form = document.querySelector(".form");
 const input = document.querySelector(".input");
 const todosList = document.querySelector(".todos");
 
-const createTodoElement = (text) => {
+const createTodoElement = (todo) => {
   const todoElement = document.createElement("li");
   todoElement.classList.add("todo");
+
+  todoElement.dataset.id = todo[todoKeys.id];
+
   const todoTextElement = document.createElement("div");
   todoTextElement.classList.add("todo-text");
-  todoTextElement.textContent = text;
+  todoTextElement.textContent = todo[todoKeys.text];
+
   todoElement.append(todoTextElement);
+
   const todoActionsElement = document.createElement("div");
   todoActionsElement.classList.add("todo-actions");
 
@@ -79,7 +84,43 @@ const createTodoElement = (text) => {
 const handleCreateTodo = (todos, text) => {
   const newTodo = createTodo(todos, text);
 
-  const newTodoElement = createTodoElement(newTodo[todoKeys.text]);
+  const newTodoElement = createTodoElement(newTodo);
 
   todosList.append(newTodoElement);
 };
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const text = input.value.trim();
+
+  if (text === "") {
+    return;
+  }
+
+  handleCreateTodo(todos, text);
+
+  input.value = "";
+});
+
+todosList.addEventListener("click", (event) => {
+  const target = event.target;
+
+  const todoElement = target.closest(".todo");
+
+  if (!todoElement) {
+    return;
+  }
+
+  const todoId = Number(todoElement.dataset.id);
+
+  if (target.matches(".button-complete")) {
+    completeTodoById(todos, todoId);
+    todoElement.classList.toggle("completed");
+  }
+
+  if (target.matches(".button-delete")) {
+    deleteTodoById(todos, todoId);
+    todoElement.remove();
+  }
+});
