@@ -16,3 +16,5 @@
 @import "./blocks/style-section.css";
 @import "./blocks/comment-section.css";
 @import "./blocks/footer.css";
+@import "./blocks/purchase-modal.css";
+@import "./blocks/scroll-top.css";

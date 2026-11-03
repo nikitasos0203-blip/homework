@@ -247,6 +247,16 @@
                 width="295"
                 height="298"
               />
+              <button
+                class="product-card__favorite"
+                type="button"
+                aria-label="Добавить в избранное"
+                aria-pressed="false"
+              >
+                <span class="product-card__favorite-icon" aria-hidden="true">
+                  ♡
+                </span>
+              </button>
             </div>
             <h3 class="product-card__title">Футболка с лентой</h3>
             <div class="product-card__rating">
@@ -267,6 +277,16 @@
                 width="295"
                 height="298"
               />
+              <button
+                class="product-card__favorite"
+                type="button"
+                aria-label="Добавить в избранное"
+                aria-pressed="false"
+              >
+                <span class="product-card__favorite-icon" aria-hidden="true">
+                  ♡
+                </span>
+              </button>
             </div>
             <h3 class="product-card__title">Узкие джинсы</h3>
             <div class="product-card__rating">
@@ -291,6 +311,16 @@
                 width="295"
                 height="298"
               />
+              <button
+                class="product-card__favorite"
+                type="button"
+                aria-label="Добавить в избранное"
+                aria-pressed="false"
+              >
+                <span class="product-card__favorite-icon" aria-hidden="true">
+                  ♡
+                </span>
+              </button>
             </div>
             <h3 class="product-card__title">Клетчатая рубашка</h3>
             <div class="product-card__rating">
@@ -311,6 +341,16 @@
                 width="295"
                 height="298"
               />
+              <button
+                class="product-card__favorite"
+                type="button"
+                aria-label="Добавить в избранное"
+                aria-pressed="false"
+              >
+                <span class="product-card__favorite-icon" aria-hidden="true">
+                  ♡
+                </span>
+              </button>
             </div>
             <h3 class="product-card__title">Футболка с полосами</h3>
             <div class="product-card__rating">
@@ -343,6 +383,16 @@
                 width="295"
                 height="298"
               />
+              <button
+                class="product-card__favorite"
+                type="button"
+                aria-label="Добавить в избранное"
+                aria-pressed="false"
+              >
+                <span class="product-card__favorite-icon" aria-hidden="true">
+                  ♡
+                </span>
+              </button>
             </div>
             <h3 class="product-card__title">Рубашка в полоску</h3>
             <div class="product-card__rating">
@@ -369,6 +419,16 @@
                 width="295"
                 height="298"
               />
+              <button
+                class="product-card__favorite"
+                type="button"
+                aria-label="Добавить в избранное"
+                aria-pressed="false"
+              >
+                <span class="product-card__favorite-icon" aria-hidden="true">
+                  ♡
+                </span>
+              </button>
             </div>
             <h3 class="product-card__title">Футболка «Courage»</h3>
             <div class="product-card__rating">
@@ -389,6 +449,16 @@
                 width="295"
                 height="298"
               />
+              <button
+                class="product-card__favorite"
+                type="button"
+                aria-label="Добавить в избранное"
+                aria-pressed="false"
+              >
+                <span class="product-card__favorite-icon" aria-hidden="true">
+                  ♡
+                </span>
+              </button>
             </div>
             <h3 class="product-card__title">Свободные бермуды</h3>
             <div class="product-card__rating">
@@ -409,6 +479,16 @@
                 width="295"
                 height="298"
               />
+              <button
+                class="product-card__favorite"
+                type="button"
+                aria-label="Добавить в избранное"
+                aria-pressed="false"
+              >
+                <span class="product-card__favorite-icon" aria-hidden="true">
+                  ♡
+                </span>
+              </button>
             </div>
             <h3 class="product-card__title">Потертые узкие джинсы</h3>
             <div class="product-card__rating">
@@ -771,5 +851,85 @@
         </div>
       </div>
     </footer>
+    <!-- Кнопка возврата наверх -->
+    <button class="scroll-top" type="button" aria-label="Вернуться наверх">
+      <span class="scroll-top__icon" aria-hidden="true"> ↑ </span>
+    </button>
+    <!-- Модальное окно на кнопку(купить сейчас) -->
+    <div class="purchase-modal" aria-hidden="true">
+      <button
+        class="purchase-modal__overlay"
+        type="button"
+        aria-label="Закрыть окно"
+      ></button>
+      <div
+        class="purchase-modal__window"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="purchase-modal-title"
+      >
+        <button
+          class="purchase-modal__close"
+          type="button"
+          aria-label="Закрыть"
+        >
+          &times;
+        </button>
+        <h2 class="purchase-modal__title" id="purchase-modal-title">
+          Оформление покупки
+        </h2>
+        <p class="purchase-modal__description">
+          Оставьте свои контактные данные, и мы свяжемся с вами.
+        </p>
+        <form class="purchase-modal__form">
+          <div class="purchase-modal__field">
+            <label class="purchase-modal__label" for="purchase-name">
+              ФИО
+            </label>
+            <input
+              class="purchase-modal__input"
+              id="purchase-name"
+              name="name"
+              type="text"
+              placeholder="Иван Иванов"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="purchase-modal__field">
+            <label class="purchase-modal__label" for="purchase-email">
+              Электронная почта
+            </label>
+            <input
+              class="purchase-modal__input"
+              id="purchase-email"
+              name="email"
+              type="email"
+              placeholder="example@mail.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="purchase-modal__field">
+            <label class="purchase-modal__label" for="purchase-phone">
+              Номер телефона
+            </label>
+            <input
+              class="purchase-modal__input"
+              id="purchase-phone"
+              name="phone"
+              type="tel"
+              placeholder="+7 (999) 123-45-67"
+              autocomplete="tel"
+              required
+            />
+          </div>
+          <button class="button purchase-modal__submit" type="submit">
+            Отправить заявку
+          </button>
+        </form>
+        <p class="purchase-modal__success" aria-live="polite"></p>
+      </div>
+    </div>
   </body>
 </html>
